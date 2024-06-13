@@ -1,0 +1,502 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+
+/* Grid for index.html */
+
+.indexgrid {
+    display: grid;
+    grid-template: 1.5fr auto auto 1fr / repeat(5, 1fr);
+    grid-template-areas: "header header header header header" "nav nav nav nav nav" "container container container container container" "footer footer footer footer footer";
+}
+
+
+/* Header */
+
+header {
+    background-image: url(pics/edinik.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    grid-area: header;
+}
+
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 13rem;
+}
+
+#mainhead {
+    font-size: 3rem;
+}
+
+
+/* Navigation */
+
+nav {
+    background: #000000;
+    display: inline-block;
+    width: 100%;
+    grid-area: nav;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 1.25rem;
+}
+
+
+/* Purple background animation for navigation */
+
+nav ul li:hover {
+    background: #117bff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.container {
+    grid-area: container;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4rem 4rem 5rem 4rem;
+}
+
+.smclogo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.intro {
+    width: 500px;
+    height: 350px;
+    font-size: 1.2rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.intro h2 {
+    text-align: center;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #000000;
+    display: inline-block;
+    width: 100%;
+    color: #a8a8a8;
+    height: 20rem;
+    text-align: right;
+    font-size: 0.9rem;
+    vertical-align: bottom;
+    grid-area: footer;
+}
+
+footer .contact {
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer td {
+    width: 4rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+footer table a {
+    color: #a8a8a8;
+}
+
+hr {
+    width: 75%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .socialmedia {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ABOUT.HTML */
+
+.aboutgrid {
+    display: grid;
+    grid-template: 1.5fr auto auto 1fr / repeat(5, 1fr);
+    grid-template-areas: "header header header header header" "nav nav nav nav nav" "members members members members members" "footer footer footer footer footer";
+}
+
+.members {
+    grid-area: members;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.members table {
+    display: inline-block;
+}
+
+.members td {
+    padding-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+#bio {
+    border-radius: 100%;
+}
+
+.members img:hover {
+    opacity: 0.7;
+}
+
+.members th {
+    font-size: 2rem;
+}
+
+#board {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.members h1 {
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+#pastyear {
+    text-align: left;
+    color: #0000ff;
+    margin-left: 3rem;
+}
+
+#past {
+    text-align: left;
+    margin-left: 3rem;
+    font-size: 1.3rem;
+}
+
+
+/* EVENTS.HTML */
+
+.eventsgrid {
+    display: grid;
+    grid-template: 1.5fr auto auto 1fr / repeat(5, 1fr);
+    grid-template-areas: "header header header header header" "nav nav nav nav nav" "main main main main main" "footer footer footer footer footer";
+}
+
+.main {
+    grid-area: main;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.main iframe {
+    width: 650px;
+    height: 500px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main h1 {
+    margin-top: 3rem;
+}
+
+#hoonbio {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.3rem;
+    text-align: left;
+    border: 1px solid #000000;
+}
+
+
+/* PLATFORM.HTML */
+
+.platformgrid {
+    display: grid;
+    grid-template: 1.5fr auto auto 1fr / repeat(5, 1fr);
+    grid-template-areas: "header header header header header" "nav nav nav nav nav" "game game game game game" "footer footer footer footer footer";
+}
+
+.trading {
+    background-image: url(pics/trader.jpg);
+    grid-area: game;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.trading img:hover {
+    display: inline-block;
+    padding-right: auto;
+    padding-left: auto;
+    opacity: 0.7;
+}
+
+.trading th {
+    color: #ffffff;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+}
+
+.trading td {
+    color: #ffffff;
+    background-color: #000000;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1.8rem;
+}
+
+#trade {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
+
+/* BLOG.HTML */
+
+.bloggrid {
+    display: grid;
+    grid-template: 1.5fr auto auto 1fr / repeat(5, 1fr);
+    grid-template-areas: "header header header header header" "nav nav nav nav nav" "blog blog blog blog blog" "footer footer footer footer footer";
+}
+
+.blog {
+    background-image: url(pics/blog.png);
+    grid-area: blog;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 3rem;
+    padding-top: 2.5rem;
+}
+
+.blog table {
+    display: inline-block;
+}
+
+.blog h2 {
+    font-size: 2rem;
+}
+
+.blog p {
+    color: #ff0000;
+}
+
+
+/* ANALYSIS.HTML */
+
+.analysisgrid {
+    display: grid;
+    grid-template: 1.5fr auto auto 1fr / repeat(5, 1fr);
+    grid-template-areas: "header header header header header" "nav nav nav nav nav" "analyze analyze analyze analyze analyze" "footer footer footer footer footer";
+}
+
+.finance {
+    grid-area: analyze;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 3rem 0 3rem 0;
+    text-align: center;
+}
+
+#alert {
+    text-align: center;
+    color: #ff0000;
+    font-size: 1.3rem;
+}
+
+.finance p {
+    text-align: left;
+    padding: 0 5rem 0 5rem;
+    font-size: 1.2rem;
+}
+
+#tableofcontents {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+#contents {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.finance hr {
+    width: 75%;
+    margin-top: 6rem;
+}
+
+#basics,
+#growth,
+#trends {
+    color: #0000ff;
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.finance td p {
+    border: 1px dotted #000000;
+    margin: 3rem 2rem 3rem 2rem;
+}
+
+#debt,
+#income,
+#cash,
+#internal,
+#condition {
+    font-size: 1.3rem;
+    padding-bottom: 3rem;
+    text-decoration: underline;
+}
+
+#fix {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* STARTER.HTML */
+
+.startergrid {
+    display: grid;
+    grid-template: 1.5fr auto auto 1fr / repeat(5, 1fr);
+    grid-template-areas: "header header header header header" "nav nav nav nav nav" "kit kit kit kit kit" "footer footer footer footer footer";
+}
+
+.reading {
+    grid-area: kit;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 3rem 0 3rem 0;
+    text-align: center;
+}
+
+#read {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+}
+
+.reading table {
+    display: inline-block;
+    margin: 3rem 1rem 3rem 1rem;
+}
+
+.reading h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+}
+
+#adjust {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.reading figcaption {
+    font-weight: bold;
+}
+
+#resource:hover {
+    opacity: 0.6;
+}
+
+
+/* MEMBER'S BIO */
+
+.membergrid {
+    display: grid;
+    grid-template: 1.5fr auto auto 1fr / repeat(5, 1fr);
+    grid-template-areas: "header header header header header" "nav nav nav nav nav" "member member member member member" "footer footer footer footer footer";
+}
+
+.team {
+    grid-area: member;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 3rem 0 3rem 0;
+    text-align: center;
+}
+
+.team table {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.team p {
+    font-size: 1.3rem;
+    border: 1px dotted #000000;
+    margin: 4rem 3rem 0 3rem;
+}
+
+.team figcaption {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* calendar for events */
+
+@media only screen and (max-width: 690px) {
+    .main iframe {
+        width: 330px;
+    }
+}
+
+
+/* adjust 10k pictures in analysis.html */
+
+@media only screen and (max-width: 1180px) {
+    .finance img {
+        width: 800px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .finance img {
+        width: 330px;
+        height: 280px;
+    }
+}
